@@ -6,6 +6,8 @@ import { responsiveScreenHeight } from 'react-native-responsive-dimensions'
 import TopBar from '../../components/common/TopBar'
 import Colors from '../../constant/Colors';
 import TabBar from '../../components/common/TabBar';
+import OrderTab from '../../components/OrderPageCom/OrderTab';
+import PendingTab from '../../components/OrderPageCom/PendingTab';
 
 export default function Order() {
     const [select, setSelect] = React.useState(true)
@@ -17,7 +19,7 @@ export default function Order() {
                 <TabBar select={select} setSelect={setSelect} btn1={"Order"} btn2={"Pending"} />
             </View>
 
-            {select ? <></> : <></>}
+            {select ? <OrderTab /> : <PendingTab />}
 
         </View>
     )
