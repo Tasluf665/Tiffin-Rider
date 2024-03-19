@@ -14,5 +14,6 @@ export default {
     Green: "#056424",
     Green2: "#008E6C",
     Green3: "#D9FFD9",
-    pink: "#FF235F"
+    pink: "#FF235F",
+    pink2: "#FFD9D9"
 };

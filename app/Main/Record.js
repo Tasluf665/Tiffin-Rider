@@ -6,6 +6,8 @@ import { responsiveScreenHeight } from 'react-native-responsive-dimensions'
 import TopBar from '../../components/common/TopBar'
 import Colors from '../../constant/Colors';
 import TabBar from '../../components/common/TabBar';
+import HistoryTab from '../../components/RecordPageCom/HistoryTab';
+import PaymentTab from '../../components/RecordPageCom/PaymentTab';
 
 export default function Record() {
     const [select, setSelect] = React.useState(true)
@@ -17,7 +19,7 @@ export default function Record() {
                 <TabBar select={select} setSelect={setSelect} btn1={"History"} btn2={"Payment"} />
             </View>
 
-            {select ? <></> : <></>}
+            {select ? <HistoryTab /> : <PaymentTab />}
 
         </View>
     )
